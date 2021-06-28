@@ -32,4 +32,4 @@ roslaunch roaddetection rviz.launch data_dir:=$HOME/test/2021/数据/点云
 
 
 - `include/road_detector.h` 和 `src/road_detector.cpp` 实现了路面检测的核心算法。
-- `src/main.cpp` 负责从文件读取点云，为 `rviz` 发布检测算法的处理结构。
+- `src/main.cpp` 负责从文件读取点云，为 `rviz` 发布检测算法的处理结果。
