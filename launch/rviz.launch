@@ -1,0 +1,9 @@
+<launch>
+    <arg name="data_dir"/>
+    <!-- 路面检测节点 -->
+    <node name="roaddetection_node" pkg="roaddetection" type="roaddetection_node">
+        <param name="data_dir" value="$(arg data_dir)"/>
+    </node>
+    <!-- rviz 可视化工具 -->
+    <node name="rviz_node" pkg="rviz" type="rviz" args="-d $(find roaddetection)/rviz/base.rviz"/>
+</launch>
