@@ -33,3 +33,8 @@ roslaunch roaddetection rviz.launch data_dir:=$HOME/test/2021/数据/点云
 
 - `include/road_detector.h` 和 `src/road_detector.cpp` 实现了路面检测的核心算法。
 - `src/main.cpp` 负责从文件读取点云，为 `rviz` 发布检测算法的处理结果。
+
+## 参考文献
+1. Hu, K., Wang, T., Li, Z., Chen, D., & Li, X. (2018). Real-time extraction method of road boundary based on three-dimensional lidar. Journal of Physics: Conference Series, 1074, 012080. doi:10.1088/1742-6596/1074/1/012080 Road Curb Detection using 3D Lidar and Integral Laser Points for Intelligent Vehicles
+2. Wang, G., Wu, J., He, R., & Yang, S. (2019). A Point Cloud Based Robust Road Curb Detection and
+Tracking Method. IEEE Access, 1–1. doi:10.1109/access.2019.2898689
